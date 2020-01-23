@@ -594,6 +594,7 @@
       $(document).ready(function(){
         $('#input').click(function() {
           var send = $("#form").formToJSON();
+          alert(send)
           $.ajax({
             url: "https://guru.com.vc/api/v1/preregistry/landing/create",
             type: "POST",
